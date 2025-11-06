@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Nothing to install for static website"
+  pre_build:
+    commands:
+      - echo "Starting build process..."
+  build:
+    commands:
+      - echo "Building website..."
+      # If you had a React or Next.js site, you’d run npm install && npm run build here
+  post_build:
+    commands:
+      - echo "Build phase complete. Preparing artifacts for deployment."
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
