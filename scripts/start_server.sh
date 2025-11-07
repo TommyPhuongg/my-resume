@@ -1,3 +1,5 @@
 #!/bin/bash
 echo "Running ApplicationStart script..."
-sudo systemctl restart httpd || sudo service httpd restart
+echo "Starting Apache (httpd) on Amazon Linux 2023..."
+sudo systemctl enable httpd
+sudo systemctl restart httpd
